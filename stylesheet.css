@@ -80,9 +80,7 @@ nav{
         align-items: center;
         background-color: black;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        opacity: 0.9;  
-         
+        transition: transform 0.5s ease-in;  
     }
     .navbar li{
         opacity: 0;
@@ -91,6 +89,7 @@ nav{
         margin-left: 50%;
         display: block;
     }
+
 } 
 
 .navbar-active{
@@ -268,3 +267,161 @@ h2 {
     background-color: #0f0f0f;
 }
 
+
+
+/*EXPERIENCE TIMELINE*/
+#experience{
+    padding:50px 15px;
+    text-align:center;
+    border-bottom: 1px solid #dcd9d9;
+}
+  
+.background-alt {
+      background: #f2f2f5;
+}
+  
+#experience-timeline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 303px;
+    right: auto;
+    height: 100%;
+    width: 3px;
+    background: #3498db;
+    z-index: 0;
+}
+#experience-timeline:after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 40px;
+    background: #3498db;
+    background: linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
+    top: 100%;
+    left: 303px;
+}
+  
+#experience-timeline {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+  
+.vtimeline-point {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+  
+.vtimeline-icon {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    float: left;
+    z-index: 99;
+    margin-left: 280px;
+}
+  
+.vtimeline-icon i {
+    display: block;
+    font-size: 2em;
+    margin-top: 10px;
+}
+  
+.vtimeline-date {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054;
+}
+  
+.vtimeline-content {
+    margin-left: 350px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+}
+  
+.vtimeline-content h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #374054;
+    display: inline-block;
+    margin: 0;
+}
+  
+.vtimeline-content h4 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 10px;
+}
+  
+.vtimeline-content p {
+    color: #74808a;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+@media screen and (max-width:760px){
+    h2 {
+        font-size: 1.6rem;
+    }
+    .btn-rounded-white {
+        display: none;
+    }
+    #experience-timeline:before {
+        left: 13px;
+    } 
+    #experience-timeline:after {
+        top: 100%;
+        left: 13px;
+    }
+    .vtimeline-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 0px; 
+    }
+    .vtimeline-icon i {
+        font-size: 1.5rem;
+        margin-top: 3px;
+    }
+    .vtimeline-date {
+        font-size: 0.8rem;
+        text-align: right;
+        margin-top: 0px;
+        padding-right: 10px;
+        width: 100%;
+    }  
+    .vtimeline-content {
+        margin: 0px 0px 0px 20px;
+        padding-top: 30px;
+        padding-left: 20px;
+        /* padding-bottom: 10px; */
+        border-radius: 3px;
+        text-align: left;
+    } 
+    .vtimeline-content h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    .vtimeline-content h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0 0 15px 10px;
+    }
+}
+
+r
